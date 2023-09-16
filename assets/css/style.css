@@ -97,7 +97,7 @@
 }
 
 li {
-  list-style: none;
+  list-style:none ;
 }
 
 a,img,data,button,input,span,select,ion-icon,textarea {
@@ -185,14 +185,14 @@ body.nav-active {
 
 }
 
-.seapartor {
+.separator {
   width: 8px;
   height: 8px;
   border: 1px solid var(--gold-crayola);
   transform: rotate(45deg);
 }
 
-#contact-label {
+.contact-label {
   font-weight: var(--weight-bold);
 }
 
@@ -228,6 +228,10 @@ body.nav-active {
 
 .contact-number::after {
   bottom: 5px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .display-1,.headline-1,.headline-2,.title-1,.title-2,.title-3,.title-4 {
@@ -473,7 +477,117 @@ body.nav-active {
   font-weight: var(--weight-bold);
 }
 
+.navbar .close-btn {
+  color: var(--white);
+  border: 1px solid currentColor;
+  padding: 4px;
+  border-radius: var(--radius-circle);
+  margin-inline-start: auto;
+  margin-block: 30px 20px;
 
+}
+
+.navbar .close-btn ion-icon {
+  --ionicon-stroke-width:40px;
+}
+
+.navbar .contact-label { margin-block-end: 10px; }
+
+.navbar::-webkit-scrollbar-thumb { background-color: var(--white-alpha-10); }
+
+.navbar .close-btn:is(:hover,:focus-visible) {
+  color: var(--gold-crayola);
+}
+
+.navbar .logo {
+  max-width: max-content;
+  margin-inline: auto;
+  margin-block-end: 60px;
+}
+
+.navbar-list {
+  border-block-end: 1px solid var(--white-alpha-20);
+  margin-block-end: 100px;
+}
+
+.navbar-item {
+  border-block-start: 1px solid var(--white-alpha-20);
+}
+
+.navbar-link {
+  position: relative;
+  font-size: var(--fontSize-label-2);
+  text-transform: uppercase;
+  padding-block: 10px;
+  max-width: unset;
+}
+
+.navbar-link::after {
+  display: none;
+}
+
+.navbar-link .span {
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover,:focus-visible, .active) .span {
+  color: var(--gold-crayola);
+  transform: translateX(20px);
+}
+
+.navbar-link .separator {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+  opacity: 0;
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active) .separator { opacity: 1; }
+
+.navbar-title {
+  margin-block-end: 15px;
+}
+
+.navbar-text {
+  margin-block: 10px;
+}
+
+.sidebar-link {
+  transition: var(--transition-1);
+}
+
+.sidebar-link:is(:hover,:focus-visible) {
+  color: var(--gold-crayola);
+}
+
+.navbar .text-center .separator {
+  margin-block: 30px;
+  margin-inline: auto;
+}
+
+.navbar .contact-label { margin-block-end: 10px; }
+
+.navbar::-webkit-scrollbar-thumb { background-color: var(--white-alpha-10); }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--black-alpha-80);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-2);
+  z-index: 1;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
 
 /*-----------------------------------*\
   #HERO

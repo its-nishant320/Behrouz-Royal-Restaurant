@@ -725,14 +725,13 @@ body.nav-active {
   left: 0;
   width: 100%;
   height: 100%;
-  transform: scale(1.15);
   pointer-events: none;
   user-select: none;
   z-index: -1;
 }
 
 .hero .slider-item.active .slider-bg {
-  animation: smoothScale 7s linear forwards;
+  animation: smoothScale 9s linear backwards;
 }
 
 @keyframes smoothScale {
@@ -743,6 +742,10 @@ body.nav-active {
 .hero .section-subtitle::after { margin-block: 14px 20px; }
 
 .hero-text { margin-block: 10px 40px; }
+
+.hero .btn {
+  margin: auto;
+}
 
 
 /*-----------------------------------*\

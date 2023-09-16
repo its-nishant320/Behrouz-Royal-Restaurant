@@ -747,6 +747,20 @@ body.nav-active {
   margin: auto;
 }
 
+.hero-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+  background-color: var(--gold-crayola);
+  width: 110px;
+  height: 110px;
+  padding: 12px;
+  scale: 0.6;
+  
+}
+
+
 
 /*-----------------------------------*\
   #SERVICE

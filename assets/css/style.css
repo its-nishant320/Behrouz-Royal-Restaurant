@@ -731,7 +731,7 @@ body.nav-active {
 }
 
 .hero .slider-item.active .slider-bg {
-  animation: smoothScale 9s linear backwards;
+  animation: smoothScale 7s linear backwards;
 }
 
 @keyframes smoothScale {
@@ -749,19 +749,68 @@ body.nav-active {
 
 .hero-btn {
   position: absolute;
-  bottom: 15px;
-  right: 15px;
+  bottom: 10px;
+  right: 10px;
   z-index: 2;
   background-color: var(--gold-crayola);
   width: 110px;
-  height: 110px;
+  height: 100px;
   padding: 12px;
   scale: 0.6;
   
 }
 
+.has-before::before,
+.has-after::after {
+  content: "";
+  position: absolute;
+}
 
+.hero-btn::after {
+  inset: 0;
+  border: 1px solid var(--gold-crayola);
+  animation: rotate360 15s linear infinite;
+}
 
+@keyframes rotate360 {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 1turn;
+  }
+}
+
+.hero .slider-item.active .slider-reveal {
+  animation: slider 1s ease forwards;
+}
+
+@keyframes slider {
+  0%{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero .slider-item.active .section-subtitle {
+  animation-delay: 500ms;
+}
+
+.hero .slider-item.active .hero-title {
+  animation-delay: 1000ms;
+}
+
+.hero .slider-item.active .hero-text {
+  animation-delay: 1500ms;
+}
+
+.hero .slider-item.active .btn {
+  animation-delay: 2000ms;
+}
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/

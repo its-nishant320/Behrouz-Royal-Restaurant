@@ -493,7 +493,7 @@ body.nav-active {
 
 .navbar .contact-label { margin-block-end: 10px; }
 
-.navbar::-webkit-scrollbar-thumb { background-color: var(--white-alpha-10); }
+.navbar ::-webkit-scrollbar-thumb { background-color: var(--white-alpha-10); }
 
 .navbar .close-btn:is(:hover,:focus-visible) {
   color: var(--gold-crayola);
@@ -567,6 +567,10 @@ body.nav-active {
   margin-inline: auto;
 }
 
+.contact-number::after {
+  bottom: -5px;
+}
+
 .navbar .contact-label { margin-block-end: 10px; }
 
 .navbar::-webkit-scrollbar-thumb { background-color: var(--white-alpha-10); }
@@ -584,7 +588,7 @@ body.nav-active {
   z-index: 1;
 }
 
-.overlay.active {
+.overlay .active {
   opacity: 1;
   pointer-events: all;
 }

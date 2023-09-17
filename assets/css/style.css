@@ -360,6 +360,7 @@ body.nav-active {
   -webkit-background-clip: text;
   -webkit-text-stroke: 0.8px var(--eerie-black-3);
   animation: loadingText linear 2s infinite;
+  display: none;
 }
 
 
@@ -957,6 +958,8 @@ body.nav-active {
 padding-inline-start: 50px; 
 object-fit: cover;
 width: 250px;
+height: 250px;
+z-index: -1;
 }
 
 .about .abs-img { 
@@ -978,7 +981,7 @@ width: 250px;
   top: -65px;
   right: 0;
   overflow: hidden;
-  width: 140px;
+  width: 130px;
   object-fit: cover;
 }
 
@@ -987,7 +990,8 @@ width: 250px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px;
+  width: 120px;
+  height: 235px;
   background-image: url('../images/img-pattern.svg');
   background-repeat: repeat;
   object-fit: cover;
@@ -995,10 +999,12 @@ width: 250px;
 
 .about .abs-img-2::before {
   inset: 0;
+  width: 130px;
   background-image: url('../images/badge-2-bg.png');
   background-repeat: no-repeat;
   background-size: contain;
   animation: rotate360 15s linear infinite;
+  z-index: 1;
 } 
 
 
@@ -1008,9 +1014,46 @@ width: 250px;
 \*-----------------------------------*/
 
 
+.special-dish-content {
+  padding-block: 70px;
+}
+
+.special-dish .abs-img {
+  margin-inline: auto;
+  margin-block-end: 12px;
+}
+
+.special-dish > .section-text {
+  margin-block: 16px 40px;
+}
+
+.special-dish .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-block-end: 40px;
+}
 
 
+.special-dish del {
+  color: var(--davys-grey);
+  font-size: var(--fontSize-body-1);
+}
 
+.special-dish span {
+  color: var(--gold-crayola);
+}
+
+
+.special-dish .btn {
+  margin-inline: auto;
+}
+
+.special-dish-banner img {
+  padding-inline-start: 20px;
+  padding-inline-end:20px;
+}
 /*-----------------------------------*\
   #MENU
 \*-----------------------------------*/

@@ -811,13 +811,129 @@ body.nav-active {
 .hero .slider-item.active .btn {
   animation-delay: 2000ms;
 }
+
+
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
 
 
+.section {
+  position: relative;
+  padding-block: var(--section-space);
+  overflow: hidden;
+  z-index: 1;
+}
 
+.bg-black {
+  background-color: var(--smoky-black-2);
+}
 
+.grid-list {
+  display: grid;
+  gap: 40px;
+}
+
+.hover\:shine {
+  position: relative;
+}
+
+.hover\:shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image:linear-gradient(to right,transparent 0%, #fff6 100%);
+  transform: skewX(-0.08turn) translateX(-180%);
+
+}
+
+.hover\:shine:is(:hover, :focus-within)::after {
+  transform: skewX(-0.08turn) translateX(275%);
+  transition: var(--transition-3);
+}
+
+.img-holder {
+  aspect-ratio: var(--width)/var(--height);
+  overflow: hidden;
+  background-color: var(--eerie-black-4);
+}
+
+.btn-text {
+  color: var(--gold-crayola);
+  padding-block-end: 4px;
+  margin-inline: auto;
+  letter-spacing: var(--letterSpacing-3);
+  font-weight: var(--weight-bold);
+  transition: var(--transition-1);
+
+}
+
+.btn-text:is(:hover,:focus-visible) {
+  color: var(--white);
+}
+
+.shape {
+  display: none;
+  position: absolute;
+  max-width: max-content;
+  z-index: -1;
+}
+
+.service .section-title {
+  margin-block-end: 16px;
+}
+
+.service .section-text {
+  margin-block-end: 40px;
+}
+
+.service-card {
+  overflow: hidden;
+}
+
+.service-card .has-before {
+  padding-block: 30px;
+  margin-block-end: 26px;
+  z-index: 1;
+}
+
+.service-card .has-before::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 100%;
+  transition: var(--transition-2);
+  transition-delay: 0;
+  z-index: -1;
+  will-change: transform;
+  background-image: url('../images/img-pattern.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  
+}
+
+.service-card:is(:hover,:focus-within) .has-before::before {
+  transform: rotateY(0.5turn) translateX(50%);
+  transition-delay: 300ms;
+
+}
+
+.service-card .card-banner {
+  transition: var(--transition-2);
+}
+
+.service-card:is(:hover,:focus-within) .card-banner {
+  transform: scale(1.02);
+}
+
+.service .card-title {
+  margin-block-end: 12px;
+}
 
 /*-----------------------------------*\
   #ABOUT

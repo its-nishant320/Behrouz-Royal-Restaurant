@@ -164,7 +164,8 @@ body.nav-active {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.conatiner {
+
+.container {
   padding-inline: 16px;
 
 }
@@ -283,6 +284,8 @@ body.nav-active {
 .label-2 {
   font-size: var(--fontSize-label-2);
 }
+
+
 /*-----------------------------------*\
   #PRELOAD
 \*-----------------------------------*/
@@ -417,7 +420,7 @@ body.nav-active {
 .nav-open-btn .line {
   width: 30px;
   height: 2px;
-  background-color: var(--white);
+  background-color: var(--gold-crayola);
   margin-block: 4px;
   transform-origin: left;
   animation: menuBtn 250ms ease-in-out alternate infinite;
@@ -432,9 +435,9 @@ body.nav-active {
   animation-delay: 150ms;
 } 
 
-.nav-open-btn .line-3 {
+/* .nav-open-btn .line-3 {
   animation-delay: 300ms;
-} 
+}   */
 
 .navbar {
   position: fixed;
@@ -487,6 +490,8 @@ body.nav-active {
   max-width: max-content;
   margin-inline: auto;
   margin-block-end: 60px;
+  padding-left: 30px;
+  filter: contrast(7);
 }
 
 .navbar-list {
@@ -822,6 +827,8 @@ body.nav-active {
   position: relative;
 }
 
+
+
 .hover\:shine::after {
   content: "";
   position: absolute;
@@ -919,11 +926,80 @@ body.nav-active {
   margin-block-end: 12px;
 }
 
+
+
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
 
 
+.about .section-text {
+  margin-block: 15px 30px;
+}
+
+.about .btn {
+  margin-inline: auto;
+  margin-block-end: 26px;
+}
+
+#about .container{
+  display: grid;
+  gap: 120px;
+}
+
+.about-banner {
+  position: relative;
+  margin-block-end: 120px;
+}
+
+.about-banner > .w-100 { 
+  
+padding-inline-start: 50px; 
+object-fit: cover;
+width: 250px;
+}
+
+.about .abs-img { 
+  position: absolute; 
+}
+
+.about .abs-img::before { 
+  z-index: -1; 
+}
+
+.about .abs-img-1 {
+  bottom: -120px;
+  left: 0;
+  width: 140px;
+  padding-block: 50px;
+}
+
+.about .abs-img-2 {
+  top: -65px;
+  right: 0;
+  overflow: hidden;
+  width: 140px;
+  object-fit: cover;
+}
+
+.about .abs-img-1::before {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  background-image: url('../images/img-pattern.svg');
+  background-repeat: repeat;
+  object-fit: cover;
+}
+
+.about .abs-img-2::before {
+  inset: 0;
+  background-image: url('../images/badge-2-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: rotate360 15s linear infinite;
+} 
 
 
 

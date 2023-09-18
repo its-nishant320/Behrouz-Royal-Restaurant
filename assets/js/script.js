@@ -132,3 +132,24 @@ window.addEventListener("mousemove", function (event) {
   }
 
 });
+
+const parallaxItems1 = document.querySelectorAll("[data-parallax-item2]");
+
+let x1, y1;
+
+window.addEventListener("mousemove", function (event) {
+
+  x1 = (event.clientX / window.innerWidth * 10) - 5;
+  y1 = (event.clientY / window.innerHeight * 10) - 5;
+
+  x1 = x1 - (x1 * 2);
+  y1 = y1 - (y1 * 2);
+
+  for (let i = 0, len = parallaxItems.length; i < len; i++) {
+    x1 = x1 * Number(parallaxItems[i].dataset.parallaxSpeed);
+    y1 = y1 * Number(parallaxItems[i].dataset.parallaxSpeed);
+    parallaxItems1[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
+  }
+
+});
+

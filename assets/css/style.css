@@ -19,20 +19,25 @@
 --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
 --gradient-1: linear-gradient(to top,hsla(0, 0%, 0%, 0.9),hsla(0, 0%, 0%, 0.7),transparent);
 
+
 --fontFamily-forum: 'Forum', cursive;
 --fontFamily-dm_sans: 'DM Sans', sans-serif;
+
 
 --fontSize-display-1: calc(1.3rem + 6.7vw);
 --fontSize-headline-1: calc(2rem + 2.5vw);
 --fontSize-headline-2: calc(1.3rem + 2.4vw);
+
 --fontSize-title-1: calc(1.6rem + 1.2vw);
 --fontSize-title-2: 2.2rem;
 --fontSize-title-3: 2.1rem;
 --fontSize-title-4: calc(1.6rem + 1.2vw);
+
 --fontSize-body-1: 2.4rem;
 --fontSize-body-2: 1.6rem;
 --fontSize-body-3: 1.8rem;
 --fontSize-body-4: 1.6rem;
+
 --fontSize-label-1: 1.4rem;
 --fontSize-label-2: 1.2rem;
 
@@ -419,12 +424,12 @@ body.nav-active {
 }
 
 .nav-open-btn .line {
-  width: 30px;
+  width: 25px;
   height: 2px;
   background-color: var(--gold-crayola);
   margin-block: 4px;
   transform-origin: left;
-  animation: menuBtn 250ms ease-in-out alternate infinite;
+  /* animation: menuBtn 250ms ease-in-out alternate infinite; */
 }
 
 @keyframes menuBtn {
@@ -729,7 +734,10 @@ body.nav-active {
   100% { transform: scale(1.15); }
 }
 
-.hero .section-subtitle::after { margin-block: 14px 20px; }
+.hero .section-subtitle::after { 
+  margin-block: 14px 20px; 
+
+}
 
 .hero-text { margin-block: 10px 40px; }
 
@@ -865,6 +873,7 @@ body.nav-active {
 
 .btn-text:is(:hover,:focus-visible) {
   color: var(--white);
+
 }
 
 .shape {
@@ -960,6 +969,7 @@ object-fit: cover;
 width: 250px;
 height: 250px;
 z-index: -1;
+
 }
 
 .about .abs-img { 
@@ -975,6 +985,7 @@ z-index: -1;
   left: 0;
   width: 140px;
   padding-block: 50px;
+  z-index: 2;
 }
 
 .about .abs-img-2 {
@@ -1060,7 +1071,110 @@ z-index: -1;
 
 
 
+.hover\:card .card-banner {
+  background-color: var(--gold-crayola);
+}
 
+.hover\:card .card-banner .image-cover {
+  transition: var(--transition-2);
+}
+
+
+.menu .section-title {
+  margin-block-end: 40px;
+}
+
+.menu .grid-list {
+  margin-block-end: 40px;
+}
+
+.menu-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hover\:card:is(:hover,:focus-within) .card-banner .image-cover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.menu-card .card-banner {
+  flex-shrink: 0;
+  border-radius: var(--radius-24);
+}
+
+.menu-card .card-title {
+  transition: var(--transition-1);
+}
+
+.menu-card .card-title:is(:hover,:focus-visible) {
+  color: var(--gold-crayola);
+}
+
+.menu-card .badge {
+  background-color: var(--gold-crayola);
+  color: var(--eerie-black-1);
+  font-family: var(--fontFamily-forum);
+  max-width: max-content;
+  line-height: var(--lineHeight-6);
+  text-transform: uppercase;
+  padding-inline: 10px;
+  margin-block-end: 10px;
+
+}
+
+.menu-card .span {
+  color: var(--gold-crayola);
+  margin-block: 10px;
+}
+
+.menu-card .card-text {
+  color: var(--quick-silver);
+  font-family: var(--fontFamily-dm_sans);
+  line-height: var(--lineHeight-4);
+}
+
+.menu-text .span {
+  display: inline-block;
+  color: var(--gold-crayola);
+}
+
+.menu .btn {
+  margin-inline: auto;
+  margin-block-start: 26px;
+}
+
+.menu .shape {
+  display: block;
+  width: 70%;
+  object-fit: cover;
+}
+
+.menu .shape-2 {
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.menu .shape-3 {
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+.move-anim {
+  animation: move 15s linear infinite;
+}
+
+@keyframes move {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
 
 /*-----------------------------------*\
   #TESTIMONIALS

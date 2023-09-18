@@ -1212,7 +1212,9 @@ z-index: -1;
   margin-block: 40px 50px;
 }
 
-.testi .separator { animation: rotate360 15s linear infinite; }
+.testi .separator { animation: rotate360 15s linear infinite; 
+
+}
 
 
 

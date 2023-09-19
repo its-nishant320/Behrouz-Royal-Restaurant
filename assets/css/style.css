@@ -390,7 +390,7 @@ body.nav-active {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -1243,7 +1243,8 @@ z-index: -1;
 }
 
 .input-field:focus {
-  background-color: var(--gold-crayola);
+  border-color: var(--gold-crayola);
+  transition: ease;
 }
 
 .icon-wrapper {
@@ -1346,23 +1347,33 @@ textarea.input-field {
 
 
 
-
-
-
-
-
 /*-----------------------------------*\
   #FEATURES
 \*-----------------------------------*/
 
 
+.features .section-title { margin-block-end: 40px; }
 
+.feature-card { padding: 30px 20px 40px; }
 
+.feature-item:nth-child(2n+1) .feature-card { background-color: var(--eerie-black-3); }
 
-/*-----------------------------------*\
-  #EVENT
-\*-----------------------------------*/
+.feature-item:nth-child(2n) .feature-card { background-color: var(--smoky-black-3); }
 
+.feature-card .card-icon {
+  max-width: max-content;
+  margin-inline: auto;
+  transition: var(--transition-2);
+}
+
+.feature-card:hover .card-icon { transform: scale(-2) rotate(180deg); }
+
+.feature-card .card-title { margin-block: 20px; }
+
+.feature-card .card-text {
+  color: var(--quick-silver);
+  line-height: var(--lineHeight-6);
+}
 
 
 

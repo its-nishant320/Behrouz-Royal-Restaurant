@@ -1314,8 +1314,8 @@ z-index: -1;
   line-height: var(--lineHeight-3);
 }
 
-.form-right .body-4:not(:last-child) {
-  margin-block-end: 25px;
+.form-right .body-4 {
+  margin-block-end: 40px;
 }
 
 .input-field[type="date"] {

@@ -1220,10 +1220,8 @@ z-index: -1;
 
 
 
+  /* #RESERVATION */
 
-/*-----------------------------------*\
-  #RESERVATION
-\*-----------------------------------*/
 
 .input-field {
   background-color: var(--eerie-black-1);
@@ -1344,12 +1342,8 @@ textarea.input-field {
   background-position: top left;
 }
 
+  /* #FEATURES */
 
-
-
-/*-----------------------------------*\
-  #FEATURES
-\*-----------------------------------*/
 
 
 .features .section-title { margin-block-end: 40px; }
@@ -1469,17 +1463,6 @@ textarea.input-field {
   text-decoration: underline;
 }
 
-
-
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
-
-
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
+@media screen {
+  
+}

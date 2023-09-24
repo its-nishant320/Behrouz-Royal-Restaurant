@@ -1457,6 +1457,9 @@ textarea.input-field {
   text-decoration: underline;
 }
 
-@media screen {
-  
-}
+@media(min-width: 575px) {
+
+    :root {
+      --fontSize-body-2: 2rem;
+    }
+  }

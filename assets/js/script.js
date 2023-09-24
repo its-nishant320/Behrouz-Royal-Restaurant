@@ -149,7 +149,7 @@ window.addEventListener("mousemove", function (event) {
   for (let i = 0, len = parallaxItems.length; i < len; i++) {
     x1 = x1 * Number(parallaxItems[i].dataset.parallaxSpeed);
     y1 = y1 * Number(parallaxItems[i].dataset.parallaxSpeed);
-    parallaxItems1[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
+    parallaxItems1[i].style.transform = `translate3d(${x1}px, ${y1}px, 0px)`;
   }
 
 });

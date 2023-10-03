@@ -93,10 +93,3 @@ We welcome contributions from the community to help improve the Behrouz Restaura
 
 We will review your pull request and provide feedback or merge it if it meets our guidelines.
 
----
-
-## License
-
-The Behrouz Restaurant website is licensed under the [MIT License](LICENSE.md). Please review the license file for more details.
-
-Thank you for your interest in contributing to the Behrouz Restaurant website!

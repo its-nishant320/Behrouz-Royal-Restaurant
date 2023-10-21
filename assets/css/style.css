@@ -670,7 +670,7 @@ body.nav-active {
 }
 
 .btn-secondary::before{
-  background-color: var(--smoky-black-1);
+  background-color: var(--gold-crayola);
 }
 
 .btn-secondary .text-2 {
@@ -1186,11 +1186,11 @@ body.nav-active {
   position: static;
 }
 
-.testi .quote {
+/* .testi .quote {
   font-size: 7rem;
   font-family: var(--fontFamily-forum);
   line-height: 0.7em;
-}
+} */
 
 .profile .img {
   margin-inline: auto;
@@ -1277,7 +1277,8 @@ body.nav-active {
 }
 
 .reservation-form {
-  margin-block-start: 40px;
+  margin-block-start: -200px;
+  background-color: var(--black-alpha-80);
 }
 
 .form-text {
@@ -1289,7 +1290,7 @@ body.nav-active {
 .form {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .form-text .link {
@@ -1341,12 +1342,19 @@ textarea.input-field {
 .form-left .btn {
   margin-inline: auto;
   margin-block-end: 40px;
+  width: max-content;
+  max-width: 100%;
+  width: 100%;
 }
+
+
+.form-left,
+.form-right { padding: 75px 60px; }
 
 .form-right {
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 500px;
+
 }
 
   /* #FEATURES */
@@ -1724,14 +1732,7 @@ textarea.input-field {
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for larger than 992px screen
-   */
-  
+
   @media (min-width: 992px) {
   
     /**
@@ -1782,6 +1783,7 @@ textarea.input-field {
       display: flex;
       grid-template-columns: 1fr 1fr;
       text-align: left;
+      background-color: var(--black-alpha-80);
     
     }
   
@@ -1860,11 +1862,6 @@ textarea.input-field {
   
   
   
-  
-  
-  /**
-   * responsive for larger than 1200px screen
-   */
   
   @media (min-width: 1200px) {
   

@@ -976,20 +976,21 @@ body.nav-active {
 
 .about .abs-img-1::before {
   top: 0;
+  z-index: -1;
   bottom: 0;
   left: 50%;
-  transform: translateX(50%);
+  transform: translateX(-50%);
   width: 140px;
   background-image: url('../images/img-pattern.svg');
   background-repeat: repeat;
 }
 
 .about .abs-img-2::before {
-  left: 50%;
+  inset: 0;
   background-image: url('../images/badge-2-bg.png');
   background-repeat: no-repeat;
   background-size: contain;
-  animation: rotate36 15s linear infinite;
+  animation: rotate360 15s linear infinite;
 }
 
 

@@ -641,10 +641,9 @@ body.nav-active {
   z-index: -1;
 }
 
-.btn > .text-1 {
+.btn > .text {
   transition: var(--transition-2);
-  top: 100%;
-  transform: translateX(-50%);
+  margin-top: 5px;
 
 }
 

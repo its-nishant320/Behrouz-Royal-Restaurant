@@ -151,7 +151,7 @@ body.nav-active {
 }
 
 
-
+.move-anim { animation: move 5s linear infinite; }
 
 /*-----------------------------------*\
   #TYPOGRAPHY
@@ -892,6 +892,11 @@ body.nav-active {
   overflow: hidden;
 }
 
+.service-card img {
+  object-fit: cover;
+}
+
+
 .service-card .has-before {
   padding-block: 30px;
   margin-block-end: 26px;
@@ -1304,6 +1309,7 @@ body.nav-active {
 
 .form-right .separator {
   margin: 20px auto;
+  margin-right: 40px;
 }
 
 

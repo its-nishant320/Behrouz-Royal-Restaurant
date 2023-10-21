@@ -1281,6 +1281,12 @@ body.nav-active {
 
 }
 
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .form-text .link {
   display: inline;
   color: var(--gold-crayola);

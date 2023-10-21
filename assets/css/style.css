@@ -959,7 +959,7 @@ body.nav-active {
 
 .about .abs-img { position: absolute; }
 
-.about .abs-img::before { z-index: -1; }
+.about .abs-img::before { z-index: 1; }
 
 .about .abs-img-1 {
   bottom: -120px;
@@ -978,18 +978,18 @@ body.nav-active {
   top: 0;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(50%);
   width: 140px;
   background-image: url('../images/img-pattern.svg');
   background-repeat: repeat;
 }
 
 .about .abs-img-2::before {
-  inset: 0;
+  left: 50%;
   background-image: url('../images/badge-2-bg.png');
   background-repeat: no-repeat;
   background-size: contain;
-  animation: rotate360 15s linear infinite;
+  animation: rotate36 15s linear infinite;
 }
 
 
@@ -1566,16 +1566,22 @@ textarea.input-field {
     .about .abs-img-1 { width: 285px; }
   
     .about .contact-number { --fontSize-body-1: 2.4rem; }
+
+    .about .abs-img-2::before {
+      z-index: 5;
+    }
   
 
     .menu-card .title-wrapper {
       display: flex;
-      /* justify-content: flex-start; */
+      justify-content: flex-start;
       align-items: center;
       gap: 15px;
     }
   
-    .menu-card .badge { margin-block-start: 0; }
+    .menu-card .badge { 
+      margin-block-start: 0; 
+    }
   
     .menu-card .span {
       flex-grow: 1;
@@ -1589,7 +1595,7 @@ textarea.input-field {
       content: "";
       height: 6px;
       flex-grow: 1;
-      border-block: 1px solid var(--white-alpha-20);
+      border: 1px solid var(--white-alpha-20);
     }
   
     .event .container {
@@ -1752,6 +1758,9 @@ textarea.input-field {
       gap: 30px;
     }
   
+    .about .abs-img-2::before {
+      z-index: 5;
+    }
   
   
     .special-dish {

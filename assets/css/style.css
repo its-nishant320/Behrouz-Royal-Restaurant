@@ -1186,11 +1186,11 @@ body.nav-active {
   position: static;
 }
 
-/* .testi .quote {
+.testi .quote {
   font-size: 7rem;
   font-family: var(--fontFamily-forum);
   line-height: 0.7em;
-} */
+}
 
 .profile .img {
   margin-inline: auto;

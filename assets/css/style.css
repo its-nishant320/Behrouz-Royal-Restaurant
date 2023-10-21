@@ -641,8 +641,11 @@ body.nav-active {
   z-index: -1;
 }
 
-.btn > .text {
+.btn > .text-1 {
   transition: var(--transition-2);
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 
 }
 
@@ -1332,7 +1335,8 @@ textarea.input-field {
 
 .form-right {
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top;
+  background-size: 500px;
 }
 
   /* #FEATURES */

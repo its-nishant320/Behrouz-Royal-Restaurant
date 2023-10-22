@@ -309,11 +309,11 @@ body.nav-active {
   transition: var(--transition-1);
 }
 
-.preload.loaded > * {
+.preload .loaded > * {
   opacity: 0;
 }
 
-.preload.loaded {
+.preload .loaded {
     transition-delay: 300ms;
     transform: translateY(100%);
 

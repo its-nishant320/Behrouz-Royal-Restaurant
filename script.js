@@ -16,6 +16,8 @@ const hideHeader = function () {
   lastScrollPos = window.scrollY;
 }
 
+
+
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 50) {
     header.classList.add("active");
@@ -92,8 +94,7 @@ const slidePrev = function () {
 
 heroSliderPrevBtn.addEventListener("click", slidePrev);
 
-
-//auto
+/////
 
 let autoSlideInterval;
 
